@@ -1,0 +1,166 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    min-height: 100vh;
+}
+body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background: black;
+    opacity: .9;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+
+}
+
+/*Header*/
+
+header {
+    height: 70px;
+    width: 100vw;
+    border: 1px solid seashell;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    background: rgba(0,0,0,0.51);
+}
+
+.header-left {
+    display: flex;
+    /*justify-content: flex-start;*/
+    /*align-items: center;*/
+    width: 50vw;
+}
+
+.header-logo {
+    margin: 10px;
+    height: 50px;
+    width: 200px;
+    /*justify-self: flex-start;*/
+
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    width: 50vw;
+    margin-right: 20px;
+}
+
+.header-link {
+    text-decoration: underline;
+    margin: 10px;
+}
+
+/*Main*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 70px;
+}
+
+/*Mission*/
+
+.mission {
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/img-mission-background.jpg");
+}
+
+.mission-title {
+    background: rgba(0,0,0,0.80);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: inherit;
+}
+
+/*Tea of the Month*/
+
+.totm {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.totm-title {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.totm-figure {
+    margin: 0px;
+}
+
+.totm-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.totm-card {
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+}
+
+/*Location*/
+.locations {
+    height: 500px;
+    width: 1200px;
+    background-image: url("../img/img-locations-background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations-card, .locations-card-mid {
+    width: 300px;
+    height: 300px;
+    background: rgba(0,0,0,0.80);
+    margin-top: 15px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations-card-mid {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.contact-info {
+    height: 200px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: auto;
+}
